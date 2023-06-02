@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homePage.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <input id="companyName" placeholder="CompanyName" type="text">
+            <input id="contactName" placeholder="ContactName" type="text">
+            <input id="contactTitle" placeholder="ContactTitle" type="text">
+            <input id="street" placeholder="Street" type="text">
+            <input id="city" placeholder="City" type="text">
+            <input id="region" placeholder="Region" type="text">
+            <input id="postalCode" placeholder="PostalCode" type="text">
+            <input id="country" placeholder="Country" type="text">
+            <input id="phone" placeholder="Phone" type="text">
+        </div>
+        <div>
+            <button onclick="AddSupplier()">Add new supplier</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <input type="text" placeholder="Id" id="deleteId">
+        </div>
+        <div>
+            <button onclick="DeleteSupplier()">Delete Supplier</button>
+        </div>
+    </div>
+    <div>
+        <button onclick="GetAllSuppliers()">Get All Suppliers</button>
+    </div>
+
+    <div id="tableParent">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Company Name</th>
+                    <th>Contact Name</th>
+                    <th>Contact Title</th>
+                    <th>Street</th>
+                    <th>City</th>
+                    <th>Region</th>
+                    <th>Postal Code</th>
+                    <th>Country</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="homePage.js"></script>
+</body>
+
+</html>
